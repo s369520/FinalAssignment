@@ -1,0 +1,107 @@
+body {
+    background: black;
+}
+
+.grid-container {
+    display: grid;
+    width: 97.5vw;
+    height: 98vh;
+    grid-gap: 1em;
+}
+
+.header {
+    background-image: url(../Static/italianBanner.jpg);
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+}
+
+/*
+bildekilde: https://media.istockphoto.com/photos/outdoor-trattoria-in-a-quiant-village-in-tuscany-italy-picture-id453203585?k=20&m=453203585&s=612x612&w=0&h=FzQei_2Hu-0dK078vsluFatX5iTyqQ1ADxir115gFaQ=
+*/
+
+#top {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+#logo {
+    background: #000;
+    border-radius: 25px;
+    width: 310px;
+    height: 50px;
+    text-align: center;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+    text-decoration: underline;
+}
+
+/* Kode fra https://youtu.be/uyaV_EWWRmo */
+/* meny-knapper */
+ul {
+    float: right;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e6e9a2;
+    background: #000;
+    padding: 10px 30px;
+    border: 1px solid;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.media {
+    background: #000;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    color: #e6e9a2;
+    font-family: sans-serif;
+}
+
+.media p {
+    font-size: 18px;
+}
+
+#homeInfo {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+hr {
+    border-top: 1px dashed white;
+    border-bottom: 0px;
+}
+
+.dishName {
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #000000;
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+}
+
+.kontaktInfo {
+    text-align: center;
+    background: #e6e9a2;
+    color: rgb(169, 169, 100);
+}
