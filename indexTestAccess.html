@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant d'Amuzza Booking</title>
+    <link rel="stylesheet" href="../Style/style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex Brush">
+    <link href='https://fonts.googleapis.com/css?family=Antonio' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nanum Myeongjo' rel='stylesheet'>
+    <script>
+        function myFunction() {
+            var input = document.querySelector("#bookingEl"); //Henter en DOM av input-feltet
+            var personer = input.value; //Finner verdien (antall personer) som brukeren har valgt
+            document.getElementById("demo").innerHTML = "Da er reservasjonen for " + personer + " lagt inn!";
+        }
+    </script>
+    <style>
+    header {
+    display: flex;
+    background-color: #000;
+    padding: 15px;
+}
+
+/* Menybar, kilde fra: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+.dropbtn {
+    background-color: #000;
+    color: #C5B358;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 28px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #C5B358;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family:Verdana;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    border-radius: 40px;
+    width: 420px;
+    height: 50px;
+    text-align: center;
+    font-family: Alex Brush;
+    font-size: 40px;
+    color: #C5B358
+}
+
+.menu {
+    float: left;
+    width: 25%;
+    color: #C5B358;
+    font-family: Verdana;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#boxes {
+    font-family: 'Italiana';
+    font-size: 22px;
+    margin-right: 20px; 
+    padding: 50px;
+}
+
+p {
+    font-family: 'Nanum Myeongjo';
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+    margin-top: 10px; 
+    color: #C5B358;
+}
+
+.menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #bbb;
+    width: 280px
+}
+
+
+@media only screen and (max-width:900px) {
+
+    /* For tablets: */
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+.servering {
+    text-align: center;
+    'Nanum Myeongjo';
+    font-size: 35px;
+}
+
+.dishName {
+    font-size: 25px;
+}
+
+/* Kode fra https://youtu.be/uyaV_EWWRmo */
+ul {
+    float: right;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #C5B358;
+    background: #000;
+    padding: 10px 30px;
+    border: 1px solid;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 20px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 1.3em auto;
+    max-width: 95%;
+    margin-left: 15px;
+}
+
+hr {
+    border-top: 1px dashed white;
+    border-bottom: 0px;
+    width: 60%;
+}
+
+/* Footer, kilde fra: https://youtu.be/YOb67OKw62s */
+.footer-col {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*footer.ul*/
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    font-family: Verdana;
+    color: #bbb;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #C5B358;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.footer-col p,
+a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+#footerLogo {
+    font-size: 30px;
+    margin-top: 50px;
+    width: 330px;
+    font-family: Alex brush;
+}
+</style>
+</head>
+
+<!-- Bilde fra wallpaperaccess https://wallpaperaccess.com/full/462860.jpg -->
+
+<body style="background-image: url(../Static/forside.jpg)">
+
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 30px">☰</button>
+            <nav class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="booking.html">Booking</a>
+                <a href="meny.html">Meny</a>
+                <a href="aapningstider.html">Åpningstider</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="accessibility.html">Accessibility page</a>
+                <a href="topical.html">Topical page</a>
+            </nav>
+        </div>
+        <!-- Nettsidens logo-->
+        <a href="index.html">
+            <h1 id="logo">Restaurant d'Amuzza</h1>
+        </a>
+    </header>
+    <div style="overflow:auto">
+        <div class="menu">
+            <div id="boxes">
+                <p style="font-family: 'Nanum Myeongjo'; font-size: 25px; color: #C5B358">Reserver bord her</p>
+                <input type="text" id="inputEl" placeholder="Skriv inn navn" style="width: 150px; font-size: 16px">
+                <br><br>
+                <form action="/action_page.php">
+                    <input type="datetime-local" id="dateTime" name="dateTime" style="font-size: 14px">
+                </form> <br>
+                <select name="booking" id="bookingEl" style="font-size: 17px">
+                    <option value="" selected disabled>Antall personer</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+                <br><br>
+                <button onclick="myFunction()" style="font-size: 16px">Send inn</button>
+                <p id="demo" style="font-size: 20px; color: #fff"></p>
+            </div>
+        </div>
+        <div class="main" style="background: #000; font-family: 'Nanum Myeongjo'">
+            <p style="font-size: 40px; text-align: center">Reservasjoner og leie</p>
+            <p style="font-size: 20px">På nettsiden vår kan du reservere bord for opptil 10 personer. Dette gjøres enkelt ved å registrere navn, dato for reservasjonen og antall personer, til venstre. Det er lurt å reservere bord, da restauranten oftest pleier å være fullbooket. </p>
+            <br>
+            <p style="font-size: 40px; text-align: center">Booking for event?</p>
+            <p style="font-size: 20px">Her på Restaurant d'Amuzza kan du booke lokalet for et event. Lite, stort, fingermat eller buffet? Dette kan vi fikse. Restauranten vår er et stort lokale på hele 250m² og har kapasitet til opptil 50 personer. Vi holder til i hjertet av Oslo, midt i sentrum, Osloveien 00, hvor den varme, gode atmosfæren hører til. Dette er viktig for oss å gjenspeile i restauranten. Den mørke, men varme tonen i fargene minner om de klassiske restaurantene i gatene av Roma. <br><br>
+                Dette er det perfekte stedet for en bursdag, en fest, et selskap eller et event, da vi tilrettelegger alt etter kundens ønske. På bildene under kan du se hvordan restauranten ser ut og hvilket tema vi har her. Vi kan også tilrettelegge stedets farger etter ønsker. Ønsker du å booke, kan du kontakte oss på telefon, da det blir enklere å finne en passende dato som både passer for deg og for oss. Kontaktinfo finner du ved å trykke på knappen under.</p>
+            <ul style="margin-right: 40%">
+                <li><a href="kontakt.html">Kontakt oss</a></li>
+            </ul>
+            <br><br><br>
+
+            <!-- kilder for bildene: https://d2xt08gwm3whka.cloudfront.net/media/66750/Mezzi_Sud%C3%B8st.jpg, https://images.squarespace-cdn.com/content/v1/5be122d8f8370ab91d93d1c3/1657713666017-8XKRMH0YEWQH2XKTQAUT/_DSC1642.jpg, https://images.squarespace-cdn.com/content/v1/5be122d8f8370ab91d93d1c3/1657713646033-DXQOBF0D6TC6TH232UX3/_DSC1587.jpg?format=1000w -->
+            <img alt="Første bilde av restauranten" src="../Static/restaurant1.jpg">
+            <img alt="Andre bilde av restauranten" src="../Static/restaurant3.jpg">
+            <img alt="Tredje bilde av restauranten" src="../Static/restaurant2.jpg">
+        </div>
+    </div>
+
+    <!-- kode fra kilde: https://youtu.be/YOb67OKw62s -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sted</h4>
+                    <p><strong>Osloveien 00, 1234 Oslo</strong></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Åpningstider</h4>
+                    <p>Man - Ons: 11.00 - 20.00</p>
+                    <p>Tor - Fre: 12.00 - 19.00</p>
+                    <p>Helg: 11.00 - 21.00</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p><strong>☎️ +47 87 65 43 21</strong></p>
+                    <p><strong>📧 damuzza@restaurant.no</strong></p>
+                </div>
+                <div class="footer-col">
+                    <h4 id="footerLogo"><a href="index.html">Restaurant d'Amuzza</a></h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body></html>
