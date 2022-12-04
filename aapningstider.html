@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant d'Amuzza Åpningstider</title>
+    <link rel="stylesheet" href="../Style/style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex Brush">
+    <link href='https://fonts.googleapis.com/css?family=Antonio' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nanum Myeongjo' rel='stylesheet'>
+
+    
+        <style>
+    header {
+    display: flex;
+    background-color: #000;
+    padding: 15px;
+}
+
+/* Menybar, kilde fra: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
+.dropbtn {
+    background-color: #000;
+    color: #C5B358;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 28px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #C5B358;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family:Verdana;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    border-radius: 40px;
+    width: 420px;
+    height: 50px;
+    text-align: center;
+    font-family: Alex Brush;
+    font-size: 40px;
+    color: #C5B358
+}
+
+.menu {
+    float: left;
+    width: 25%;
+    color: #C5B358;
+    font-family: Verdana;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#boxes {
+    font-family: 'Italiana';
+    font-size: 22px;
+    margin-right: 20px; 
+    padding: 50px;
+}
+
+p {
+    font-family: 'Nanum Myeongjo';
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+    margin-top: 10px; 
+    color: #C5B358;
+}
+
+.pics{
+   display: flex;
+   flex-flow: wrap row;
+grid-gap: 1em;
+}
+
+.menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #bbb;
+    width: 280px
+}
+
+
+@media only screen and (max-width:900px) {
+
+    /* For tablets: */
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+.servering {
+    text-align: center;
+    'Nanum Myeongjo';
+    font-size: 35px;
+}
+
+.dishName {
+    font-size: 25px;
+}
+
+/* Kode fra https://youtu.be/uyaV_EWWRmo */
+ul {
+    float: right;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #C5B358;
+    background: #000;
+    padding: 10px 30px;
+    border: 1px solid;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 20px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 1.3em auto;
+    max-width: 95%;
+    margin-left: 15px;
+}
+
+hr {
+    border-top: 1px dashed white;
+    border-bottom: 0px;
+    width: 60%;
+}
+
+/* Footer, kilde fra: https://youtu.be/YOb67OKw62s */
+.footer-col {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*footer.ul*/
+ul {
+    list-style: none;
+}
+
+*  {
+          box-sizing: border-box;
+      }
+  .row {
+      display: flex;
+   flex-flow: wrap row;
+      
+  }
+  .column {
+      padding: 5px;
+  }
+
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    font-family: Verdana;
+    color: #bbb;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #C5B358;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.footer-col p,
+a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+#footerLogo {
+    font-size: 30px;
+    margin-top: 50px;
+    width: 330px;
+    font-family: Alex brush;
+}
+
+    </style>
+</head>
+
+<!-- Bilde fra pixabay.com https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg -->
+
+<body style="background-image: url(../Static/bakgrunnKontakt.jpg)">
+
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 30px">☰</button>
+            <nav class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="booking.html">Booking</a>
+                <a href="meny.html">Meny</a>
+                <a href="aapningstider.html">Åpningstider</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="accessibility.html">Accessibility page</a>
+                <a href="topical.html">Topical page</a>
+            </nav>
+        </div>
+        <!-- Nettsidens logo-->
+        <a href="index.html">
+            <h1 id="logo">Restaurant d'Amuzza</h1>
+        </a>
+    </header>
+    <div style="overflow:auto">
+        <div class="main" style="color: #C5B358; font-family: 'Italiana'; text-align: center">
+            <p style="text-align: center; font-family: 'Italiana'; font-size: 40px">Våre åpningstider</p>
+            <p class="servering">Hverdager</p>
+            <hr>
+            <p style="font-size: 20px">
+                Mandag, tirsdag, onsdag: 11.00 - 20.00
+            </p>
+            <p style="font-size: 20px">
+                Torsdag, fredag: 12.00 - 19.00
+            </p>
+            <hr><br>
+            <p class="servering">Helger</p>
+            <hr>
+            <p style="font-size: 20px">
+                Lørdag, søndag: 11.00 - 21.00
+            </p>
+            <hr><br>
+            <p class="servering">Helligdager</p>
+            <hr>
+            <p style="font-size: 25px">
+                <strong>Påske</strong>
+            </p>
+            <p style="font-size: 20px">
+                Påskeaften: 13.00 - 18.00
+            </p>
+            <p style="font-size: 20px">
+                1. påskedag: stengt!
+            </p>
+            <p style="font-size: 20px">
+                2. påskedag: stengt!
+            </p>
+            <br>
+            <p style="font-size: 25px">
+                <strong>Nasjonaldag</strong>
+            </p>
+            <p style="font-size: 20px">
+                17. mai: stengt!
+            </p>
+            <br>
+            <p style="font-size: 25px">
+                <strong>Jul</strong>
+            </p>
+            <p style="font-size: 20px">
+                Juleaften: 13.00 - 16.00
+            </p>
+            <p style="font-size: 20px">
+                1. juledag: stengt!
+            </p>
+            <p style="font-size: 20px">
+                2. juledag: stengt!
+            </p>
+            <br>
+            <p style="font-size: 25\px">
+                <strong>Nyttår</strong>
+            </p>
+            <p style="font-size: 20px">
+                Nyttårsaften: 12.00 - 23.00
+            </p>
+            <p style="font-size: 20px">
+                1. nyttårsdag: stengt!
+            </p>
+            <br>
+        </div>
+    </div>
+
+    <!-- kode fra kilde: https://youtu.be/YOb67OKw62s -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sted</h4>
+                    <p><strong>Osloveien 00, 1234 Oslo</strong></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Åpningstider</h4>
+                    <p>Man - Ons: 11.00 - 20.00</p>
+                    <p>Tor - Fre: 12.00 - 19.00</p>
+                    <p>Helg: 11.00 - 21.00</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <p><strong>☎️ +47 87 65 43 21</strong></p>
+                    <p><strong>📧 damuzza@restaurant.no</strong></p>
+                </div>
+                <div class="footer-col">
+                    <h4 id="footerLogo"><a href="index.html">Restaurant d'Amuzza</a></h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
